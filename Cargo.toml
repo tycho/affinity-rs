@@ -19,6 +19,6 @@ categories = ["api-bindings","os"]
 cfg-if = "^1"
 num_cpus = "^1"
 
-[target.'cfg(any(target_os = "linux", target_os = "macos"))'.dependencies]
+[target.'cfg(any(target_os = "freebsd", target_os = "linux", target_os = "macos"))'.dependencies]
 libc = "*"
 errno = "*"
